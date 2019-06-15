@@ -1,0 +1,20 @@
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#title-screen{
+
+}
+
+#portfolio-screen{
+
+}
+
+#contact-screen{
+
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  

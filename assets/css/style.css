@@ -1,20 +1,117 @@
 .container {
-    min-width: 100vw;
-    min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
 }
 
-#title-screen{
-
+body {
+    background-color: black;
 }
 
-#portfolio-screen{
-
+#title-screen {
+  background: url("../images/casey-horner-1678073-unsplash.jpg");
+  background: url("../images/stephen-cook-1676535-unsplash.jpg");
+  background-size: cover;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
-#contact-screen{
-
+.title-page-text {
+  color: whitesmoke;
+  /* font-size: 5em; */
+  text-shadow: 0px 0px 10px black;
 }
-::-webkit-scrollbar {
+
+#portfolio-screen {
+  background: pink;
+}
+
+#contact-screen {
+}
+
+.pronounce {
+  /* display: inline-flex; */
+  /* flex-direction: left; */
+  /* margin-right: 2em;
+    line-height: .2;*/
+  font-size: .8em;
+  font-style: italic;
+  color: lightgrey;
+}
+.hidden {
     display: none;
-  }
-  
+}
+
+#name {
+  font-size: 7vw;
+  padding-left: 3vw;
+  padding-top: 80vh;
+  color: whitesmoke;
+  text-shadow: 0px 0px 10px black;
+}
+#web-dev {
+  font-size: 3vw;
+  padding-top: 88vh;
+  color: lightgray;
+  text-shadow: 0px 0px 10px black;
+}
+#title-content {
+  font-size: 4.5vw;
+}
+
+/* portfolio page */
+
+#portfolio-title {
+  border: 1px solid green;
+  display: block;
+  margin-top: 100px;
+  font-size: 4em;
+}
+
+.slide {
+  height: 50vh;
+  width: 60vw;
+  margin: 5vh auto;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+#show-portfolio {
+  border: 1px solid blue;
+  font-size: 2.5em;
+}
+
+.icon-link,
+.icon-link:focus {
+  color: red;
+  display: block;
+  margin: 5em auto;
+}
+
+.icon-link:hover,
+.icon-link:active {
+  color: green;
+}
+
+.name {
+  width: 30%;
+  display: inline-block;
+  margin-right: 6em;
+}
+
+#contact-form {
+  border: 1px solid maroon;
+  margin: 30vh auto;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  width: 70%;
+}
+
+#contact-form .form-control {
+  margin-top: 2rem;
+}
+/* globally hide scroll bar */
+
+::-webkit-scrollbar {
+  display: none;
+}

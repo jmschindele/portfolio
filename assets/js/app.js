@@ -7,15 +7,15 @@ function() {
     $('#lastName').text('Schindele')
 })
 
-setTimeout(function(){
-    $('#name').removeClass('hidden')
-    $('#name').addClass('fadeIn slower')
-}, 500)
+// setTimeout(function(){
+//     $('#name').removeClass('hidden')
+//     $('#name').addClass('fadeIn slower')
+// }, 500)
 
 setTimeout(function(){
     $('#web-dev').removeClass('hidden')
     $('#web-dev').addClass('fadeIn slow')
-}, 1750)
+}, 750)
 
 
 var lastScrollTop = 0;

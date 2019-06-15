@@ -4,11 +4,10 @@
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 #title-screen {
-  background: url("../images/casey-horner-1678073-unsplash.jpg");
   background: url("../images/stephen-cook-1676535-unsplash.jpg");
   background-size: cover;
   background-size: 100vw 100vh;
@@ -34,12 +33,12 @@ body {
   /* flex-direction: left; */
   /* margin-right: 2em;
     line-height: .2;*/
-  font-size: .8em;
+  font-size: 0.8em;
   font-style: italic;
   color: lightgrey;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 
 #name {
@@ -114,4 +113,34 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 700px) {
+  #name {
+    font-size: 15vw;
+    padding-left: 3vw;
+    padding-top: 50vh;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px black;
+    display: block;
+  }
+  #web-dev {
+    font-size: 10vw;
+    padding-top: 75vh;
+    color: lightgray;
+    text-shadow: 0px 0px 10px black;
+    display: block;
+    padding-left: -100px;
+    margin-left: -400px;
+    width: 50px;
+  }
+
+  #title-screen {
+    background: url("../images/stephen-cook-1676535-unsplash.jpg");
+    background-size: cover;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
 }

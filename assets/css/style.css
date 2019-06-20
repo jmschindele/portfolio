@@ -3,17 +3,27 @@
   height: 100vh;
 }
 
+
+/* added fixed background so the divs move instead of the whole page */
 body {
+    background: url("../images/stephen-cook-1676535-unsplash.jpg");
   background-color: black;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 
 #title-screen {
-  background: url("../images/stephen-cook-1676535-unsplash.jpg");
+  /* background: url("../images/stephen-cook-1676535-unsplash.jpg"); */
   background-size: cover;
-  background-size: 100vw 100vh;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: black;
+  background: transparent;
 }
+/* end changes in class  */
 
 .title-page-text {
   color: whitesmoke;
@@ -22,10 +32,12 @@ body {
 }
 
 #portfolio-screen {
-  background: pink;
+  background: grey;
+  min-height: 900px;
 }
 
 #contact-screen {
+  background: black;
 }
 
 .pronounce {
@@ -50,7 +62,7 @@ body {
 }
 #web-dev {
   font-size: 3vw;
-  padding-top: 88vh;
+  padding-top: 84vh;
   color: lightgray;
   text-shadow: 0px 0px 10px black;
 }
@@ -63,17 +75,11 @@ body {
 #portfolio-title {
   border: 1px solid green;
   display: block;
-  margin-top: 100px;
+  margin-top: 40px;
   font-size: 4em;
 }
 
-.slide {
-  height: 50vh;
-  width: 60vw;
-  margin: 5vh auto;
-  overflow: hidden;
-  border: 1px solid red;
-}
+
 
 #show-portfolio {
   border: 1px solid blue;
@@ -133,14 +139,23 @@ body {
     padding-left: -100px;
     margin-left: -400px;
     width: 50px;
+    position: absolute;
+
   }
 
   #title-screen {
-    background: url("../images/stephen-cook-1676535-unsplash.jpg");
+    /* background: url("../images/stephen-cook-1676535-unsplash.jpg"); */
     background-size: cover;
     background-size: auto 100vh;
     background-repeat: no-repeat;
     background-color: black;
   }
 
+}
+
+.carousel {
+  width: 1280px;
+  height: 640px;
+  margin: 0 auto;
+  overflow: hidden;
 }

@@ -25,6 +25,7 @@ $(window).scroll(function(event){
        $('#title-screen').addClass('animated fadeOut')
        $('#title-screen').on('animationend', function(){
            $('#title-screen').addClass('hidden');
+           $('#portfolio-screen').addClass('animated fadeIn fast')
            $('#portfolio-screen').removeClass('hidden');
        });
        

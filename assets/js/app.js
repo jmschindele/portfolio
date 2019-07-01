@@ -9,6 +9,16 @@ function() {
     $('#lastName').text('Schindele')
 })
 
+$('#lastName').live('touchstart', function(e) {
+    $('#lastName').addClass('pronounce')
+  $('#lastName').text('/SHin·də·lēː/')  
+})
+$('#lastName').live('touchend',
+function(e) {
+    $('#lastName').removeClass('pronounce')
+    $('#lastName').text('Schindele')
+})
+
 // setTimeout(function(){
 //     $('#name').removeClass('hidden')
 //     $('#name').addClass('fadeIn slower')

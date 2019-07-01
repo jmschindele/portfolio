@@ -9,11 +9,11 @@ function() {
     $('#lastName').text('Schindele')
 })
 
-$('#lastName').live('touchstart', function(e) {
+$('#lastName').on('touchstart', function(e) {
     $('#lastName').addClass('pronounce')
   $('#lastName').text('/SHin·də·lēː/')  
 })
-$('#lastName').live('touchend',
+$('#lastName').on('touchend',
 function(e) {
     $('#lastName').removeClass('pronounce')
     $('#lastName').text('Schindele')

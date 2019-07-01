@@ -1,3 +1,5 @@
+window.scrollTo(0, -1000);
+
 $('#lastName').hover( function() {
     $('#lastName').addClass('pronounce')
   $('#lastName').text('/SHin·də·lēː/')  
@@ -19,19 +21,20 @@ setTimeout(function(){
 
 
 var lastScrollTop = 0;
-$(window).scroll(function(event){
-   var currentScrollTop = $(this).scrollTop();
-   if (currentScrollTop > lastScrollTop){
-       $('#title-screen').addClass('animated fadeOut')
-       $('#title-screen').on('animationend', function(){
-           $('#title-screen').addClass('hidden');
-           $('#portfolio-screen').addClass('animated fadeIn fast')
-           $('#portfolio-screen').removeClass('hidden');
-       });
-       
-   } else {
-
-   }
-   lastScrollTop = currentScrollTop;
-
-});
+    $(window).scroll(function(event){
+        
+        var currentScrollTop = $(this).scrollTop();
+        if (document.querySelector("#portfolio-screen").getClientRects()[0].y < 20){
+            $('#title-screen').addClass('hidden')
+            $('#title-screen').on('animationend', function(){
+                $('#title-screen').addClass('hidden');
+                $('#portfolio-screen').addClass('animated fadeIn fast')
+                $('#portfolio-screen').removeClass('hidden');
+            });
+            
+        } else {
+     
+        }
+        lastScrollTop = currentScrollTop;
+     
+     });

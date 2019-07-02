@@ -166,37 +166,17 @@ body {
   overflow: hidden;
 }
 
-.project-description {
-  height: 480px;
-  width: 50px;
-  background: #DCD8CC;
-  overflow: hidden;
-}
 
-.skill-div {
 
-  background: #f1f2da;
-  height: 400px;
-  margin: 40px;
-  width: 480px; 
-  box-shadow: 0px 0px 5px 5px  lightgray;
-}
-
-.skill-div:hover {
-  background: #f1f2da;
-  height: 420px;
-  margin: 30px;
-  width: 500px;
-  box-shadow: 0px 0px 10px 2px gray;
-  /* padding-top: 30px; */
-  
-}
 
 .project-image {
   background: red;
+  border: solid 5px yellow;
   height: 120%;
   width: 100%;
-  min-width: 515px;
+  max-height: 560px;
+  min-height: 100%;
+  min-width: 480px;
   overflow: hidden;
   padding: 0px;
   position: relative;
@@ -239,5 +219,16 @@ body {
     font-size: 10vw;
     color: lightgray;
     text-shadow: 0px 0px 10px black;
+  }
+  
+  .home-container {
+    min-width: 480px;
+
+  }
+
+  .project-image {
+  min-width: 100vw;
+  height: auto;
+  margin: 0 auto;
   }
 }

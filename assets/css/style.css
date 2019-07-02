@@ -1,13 +1,56 @@
 /* added fixed background so the divs move instead of the whole page */
+
+/*
+dimgray: #666A61
+sandybrown: #F1AD70
+light grey: #DCD8CC
+linen: #F2EFEA
+rosybrown: #ABA188
+ #114B5F, #3D405B
+ #f1f2da
+*/
+
 body {
-    
-  background-color: black;
+  background-color: #666a61;
+  /* background-image: linear-gradient(black 10%,#F1AD70 90%); */
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }
 
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlay-text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: (-50%, -50%);
+  -ms-transform: (-50%, -50%);
+}
+
+.project-image:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+/* .row {
+  border: solid 5px yellow;
+} */
 .home-container {
   min-width: 100vw;
   height: 100vh;
@@ -15,7 +58,6 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
 
 .title-page-text {
   color: whitesmoke;
@@ -37,12 +79,10 @@ body {
   position: absolute;
   right: 10%;
   bottom: 7%;
-
 }
 
-
 #portfolio-screen {
-  background: grey;
+  background: #DCD8CC;
   min-height: 900px;
 }
 
@@ -75,11 +115,11 @@ body {
   font-size: 4em;
 }
 
-
-
 #show-portfolio {
   font-size: 2.5em;
 }
+
+
 
 .icon-link,
 .icon-link:focus {
@@ -116,55 +156,74 @@ body {
   display: none;
 }
 
-
-
 .carousel {
   /* width: 1280px; */
   height: 640px;
   margin: 0 auto;
   overflow: hidden;
 }
-
+.carousel-item {
+  overflow: hidden;
+}
 
 .project-description {
-  background: #f1f2da;
   height: 480px;
+  width: 50px;
+  background: #DCD8CC;
+  overflow: hidden;
+}
+
+.skill-div {
+
+  background: #f1f2da;
+  height: 400px;
+  margin: 40px;
+  width: 480px; 
+  box-shadow: 0px 0px 5px 5px  lightgray;
+}
+
+.skill-div:hover {
+  background: #f1f2da;
+  height: 420px;
+  margin: 30px;
+  width: 500px;
+  box-shadow: 0px 0px 10px 2px gray;
+  /* padding-top: 30px; */
+  
 }
 
 .project-image {
   background: red;
-  height: 480px;
-  width: 560px;
+  height: 120%;
+  width: 100%;
+  min-width: 515px;
   overflow: hidden;
   padding: 0px;
-
+  position: relative;
+  display: block;
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
+  border: 5px solid yellow;
 }
 
 .square-photo {
-  width: 570px;
-  height: 480px;
+  width: 100%;
+  height: 120%;
   margin: 0 auto;
   padding: 0px;
   display: block;
 }
 
-.square-photo img {
+/* .square-photo img {
   width: 570px;
   height: 480px;
-}
+} */
 
 #lastName {
   display: inline-block;
 }
-
-
-
-
-
 
 @media (max-width: 700px) {
   #name {
@@ -181,7 +240,4 @@ body {
     color: lightgray;
     text-shadow: 0px 0px 10px black;
   }
-
-
-
 }

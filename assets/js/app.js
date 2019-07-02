@@ -30,21 +30,4 @@ setTimeout(function(){
 }, 750)
 
 
-var lastScrollTop = 0;
-    $(window).scroll(function(event){
-        
-        var currentScrollTop = $(this).scrollTop();
-        if (document.querySelector("#portfolio-screen").getClientRects()[0].y < 20){
-            $('#title-screen').addClass('hidden')
-            $('#title-screen').on('animationend', function(){
-                $('#title-screen').addClass('hidden');
-                $('#portfolio-screen').addClass('animated fadeIn fast')
-                $('#portfolio-screen').removeClass('hidden');
-            });
-            
-        } else {
-     
-        }
-        lastScrollTop = currentScrollTop;
-     
-     });
+

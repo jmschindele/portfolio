@@ -1,4 +1,4 @@
-window.scrollTo(0, -1000);
+// window.scrollTo(0, -1000);
 
 $('#lastName').hover( function() {
     $('#lastName').addClass('pronounce')
@@ -28,6 +28,16 @@ setTimeout(function(){
     $('#web-dev').removeClass('hidden')
     $('#web-dev').addClass('fadeIn slow')
 }, 750)
+
+
+// $(function () {
+    $(window).scroll(function () {
+        var currentScrollTop = $(window).scrollTop();
+        console.log(currentScrollTop)
+        $('#home-overlay').css('opacity',currentScrollTop/$('#home-overlay').height());
+
+    });
+// });
 
 
 

@@ -218,6 +218,30 @@ body {
   display: inline-block;
 }
 
+.logo-button{
+  background: grey;
+  padding: .5em;
+  margin: .6em;
+  border-radius: .4em;
+  display: inline-block;
+}
+.visit-site-button{
+  color: white;
+  background: green;
+  padding: .5em;
+  margin: 1em;
+  border-radius: .4em;
+  display: inline-block;
+}
+.overlay-text a:hover {
+  text-decoration: none;
+}
+
+.overlay-text h3 {
+  font-size: 3em;
+  text-shadow: 0px 0px 10px black;
+}
+
 @media (max-width: 700px) {
   #name {
     font-size: 15vw;

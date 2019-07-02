@@ -30,14 +30,21 @@ setTimeout(function(){
 }, 750)
 
 
-// $(function () {
     $(window).scroll(function () {
         var currentScrollTop = $(window).scrollTop();
-        console.log(currentScrollTop)
         $('#home-overlay').css('opacity',currentScrollTop/$('#home-overlay').height());
 
     });
-// });
 
 
+$('.click-flip').on('click', function() {
+
+    let text = $(this).parent();
+    let overlay = $(this).parent().parent();
+    let span = $(this).parent().parent().parent();
+
+    overlay.addClass('hidden');
+    span.removeClass('project-image')
+    span.addClass('flip-card')
+})
 

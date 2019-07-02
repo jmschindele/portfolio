@@ -169,22 +169,10 @@ body {
   display: none;
 }
 
-.carousel {
-  /* width: 1280px; */
-  height: 640px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.carousel-item {
-  overflow: hidden;
-}
-
-
-
 
 .project-image {
-  background: red;
-  height: 120%;
+  border: solid 3px black;
+  height: auto;
   width: 100%;
   max-height: 560px;
   min-height: 100%;
@@ -207,6 +195,7 @@ body {
   margin: 0 auto;
   padding: 0px;
   display: block;
+ 
 }
 
 /* .square-photo img {
@@ -216,12 +205,13 @@ body {
 
 #lastName {
   display: inline-block;
+  margin-left: .2em
 }
 
 .logo-button{
   background: grey;
   padding: .5em;
-  margin: .6em;
+  margin: .2em .1em;
   border-radius: .4em;
   display: inline-block;
 }
@@ -270,4 +260,15 @@ body {
   height: auto;
   margin: 0 auto;
   }
+
+  .app-title {
+    font-size: 2.5rem !important;
+  }
+
+  .overlay {
+    width: 100%;
+    flex-wrap: wrap
+  }
 }
+
+

@@ -9,9 +9,12 @@ rosybrown: #ABA188
  #114B5F, #3D405B
  #f1f2da
 */
-
+div {
+  margin: 0px !important;
+ padding: 0px;
+}
 body {
-  background-color: #666a61;
+  background-color:black;
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -57,6 +60,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
+  padding: 0px;
+  margin: 0px;
 }
 
 #home-overlay {
@@ -192,7 +197,8 @@ body {
 
 .container {
   min-height: 100vh;
-
+  padding: 0px;
+  margin: 0px;
 }
 
 .square-photo {

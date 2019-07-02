@@ -221,10 +221,10 @@ body {
     text-shadow: 0px 0px 10px black;
   }
   
-  .home-container {
+  /* .home-container {
     min-width: 480px;
 
-  }
+  } */
 
   .project-image {
   min-width: 100vw;

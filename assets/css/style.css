@@ -118,7 +118,7 @@ body {
 #contact-screen {
   color: white;
   background: navy;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .pronounce {
@@ -171,16 +171,18 @@ body {
 }
 
 #contact-form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 1px solid maroon;
-  margin: 30vh auto;
-  padding-top: 5em;
-  padding-bottom: 3em;
+  padding: 15px;
   width: 70%;
+  background: grey;
+  border-radius: 10px;
+
 }
 
-#contact-form .form-control {
-  margin-top: 2rem;
-}
 /* globally hide scroll bar */
 
 ::-webkit-scrollbar {
@@ -379,9 +381,20 @@ border-radius: 4px;
 
 .segway-banner h2 {
 color: white;
+letter-spacing: .05em;
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-size: 4em;
+text-shadow: 
+  4px 4px black;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+#contact-form input {
+  margin-bottom: 10px;
 }

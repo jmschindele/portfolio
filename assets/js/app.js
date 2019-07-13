@@ -36,6 +36,29 @@ setTimeout(function(){
 
     });
 
+    $(window).scroll(function () {
+        let currentScrollTop = $(window).scrollTop();
+        // console.log( 'current scroll: ',currentScrollTop);
+//         if($("#contact-screen").scrollTop() === 0) {
+// alert("started from the bottom now we're here")
+//         }
+if ($('#hi').offset().top - currentScrollTop <= 0) {
+
+     if($("#portfolio-segway").hasClass('hidden') === false)
+     {
+
+      $('#portfolio-segway').addClass('hidden'); }
+
+} else {
+
+    if($("#portfolio-segway").hasClass('hidden'))
+     {
+
+      $('#portfolio-segway').removeClass('hidden'); }
+}
+
+})
+
 
 // $('.click-flip').on('click', function() {
 

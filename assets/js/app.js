@@ -37,14 +37,27 @@ setTimeout(function(){
     });
 
 
-$('.click-flip').on('click', function() {
+// $('.click-flip').on('click', function() {
 
-    let text = $(this).parent();
-    let overlay = $(this).parent().parent();
-    let span = $(this).parent().parent().parent();
+//     let text = $(this).parent();
+//     let overlay = $(this).parent().parent();
+//     let span = $(this).parent().parent().parent();
 
-    overlay.addClass('hidden');
-    span.removeClass('project-image')
-    span.addClass('flip-card')
-})
+//     overlay.addClass('hidden');
+//     span.removeClass('project-image')
+//     span.addClass('flip-card')
+// })
 
+const coll = document.getElementsByClassName('collapsible');
+console.log(coll)
+for ( let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}

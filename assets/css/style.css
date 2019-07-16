@@ -1,6 +1,7 @@
-/* added fixed background so the divs move instead of the whole page */
 
 /*
+color pallette: 
+
 dimgray: #666A61
 sandybrown: #F1AD70
 light grey: #DCD8CC
@@ -9,16 +10,17 @@ rosybrown: #ABA188
  #114B5F, #3D405B
  #f1f2da
 */
+
 div {
   margin: 0px !important;
  padding: 0px;
 }
 body {
   background-color:black;
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+}
+
+.profile-picture {
+  border-radius: 1000px;
 }
 
 .overlay {
@@ -32,12 +34,11 @@ body {
   height: 100%;
   transition: all .7s ease;
   opacity: 0;
+  display: block;
 }
 
 .overlay-text {
-
   /* white-space: nowrap; */
- 
   color: white;
   font-size: 20px;
   position: absolute;
@@ -46,8 +47,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  display: block;
   
-  
+}
+
+.overlay-text .app-title {
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .project-image:hover {
@@ -112,7 +118,6 @@ body {
   height: 100vh;
   background-image: url('../images/bedge_grunge.png');
   overflow: auto;
-  /* background-attachment: fixed; */
 }
 
 #contact-screen {
@@ -122,10 +127,6 @@ body {
 }
 
 .pronounce {
-  /* display: inline-flex; */
-  /* flex-direction: left; */
-  /* margin-right: 2em;
-    line-height: .2;*/
   font-size: 0.8em;
   font-style: italic;
   color: lightgrey;
@@ -224,11 +225,6 @@ body {
  
 }
 
-/* .square-photo img {
-  width: 570px;
-  height: 480px;
-} */
-
 #lastName {
   display: inline-block;
   margin-left: .2em
@@ -291,10 +287,6 @@ body {
 
   .project-image:hover {
     transform: scale(1.0)
-  }
-
-  .app-title {
-    font-size: 2.5rem !important;
   }
 
   .overlay {
@@ -368,6 +360,10 @@ border-radius: 4px;
 .logo-list {
   position: absolute; 
   bottom: 0;
+  left: 50%;
+  width: 75%;
+  border: solid red 10px;
+  transform: translate(-50%, 0%);
 }
 
 .project-holder {
@@ -376,7 +372,7 @@ border-radius: 4px;
 
 .segway-banner {
   padding: 80px;
-  background: blue;
+  background: transparent;
   height: 100px;
   min-width: 100vw;
   background-image: url('../images/stardust.png');

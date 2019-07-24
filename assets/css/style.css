@@ -59,7 +59,6 @@ body {
 .project-image:hover {
   border-radius: 15px;
   transform: scale(1.05)
-
 }
 
 .project-image:hover .overlay, .overlay-text {

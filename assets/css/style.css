@@ -574,4 +574,32 @@ body {
     transform: scale(1);
     transition: .5s ease;
   }
+
+  .li-logo {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: black;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 1px white;
+    margin: 5px;
+  }
+
+  .node-image {
+    width: auto;
+    height: 25px;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  .handlebars-image {
+    width: auto;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

@@ -19,10 +19,13 @@ body {
 }
 
 .profile-picture {
-  border-radius: 1000px;
-  width: 250px;
+  border-radius: 1px;
+  max-width: 600px;
+  max-height: 268px;
+  /* width: 50%; */
   height: auto;
   margin-top: 50px;
+  /* float: left; */
 }
 
 .overlay {
@@ -38,6 +41,64 @@ body {
   opacity: 0;
   display: block;
 }
+
+.about-list li {
+  /* list-style: disc; */
+}
+
+#skills-screen {
+  background: whitesmoke;
+}
+
+.skill-list-heading {
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+ #skills-list ul{
+  border: solid 1px whitesmoke;
+  background: whitesmoke;
+  /* max-width: 1200px; */
+  /* width: 90%; */
+  padding: 20px;
+  /* color: #626264; */
+  color: #444349;
+  margin: 20px 30px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  border-right: lightgrey;
+  border-bottom: grey;
+  border-bottom-right-radius: 10px;
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  box-shadow: 
+  -2px -5px 1px 1px whitesmoke,
+  -15px -2px 1px 1px whitesmoke,
+  15px 15px 15px 5px #e2e2e2;
+  transition: .7s ease;
+ }
+
+ #skills-list ul span {
+   display: block;
+ }
+
+ #skills-list ul li {
+  display: inline-block;
+ }
+ 
+ #skills-list ul:hover {
+   background: #444349;
+   color: whitesmoke;
+   text-shadow: 0px 0px black;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   transform: scale(1.02)
+   /* box-shadow: 0px 0px whitesmoke; */
+   /* border-top-right-radius: 0px; */
+ }
 
 .overlay-text {
   /* white-space: nowrap; */
@@ -117,6 +178,10 @@ body {
   background: #dcd8cc;
   height: 100vh;
   background-image: url("../images/bedge_grunge.png");
+  /* overflow: auto; */
+}
+
+.handleOverflow {
   overflow: auto;
 }
 
@@ -437,5 +502,12 @@ body {
     text-shadow: 3px 3px 10px #919194;
     transition: 0.5s ease;
     /* box-shadow:; */
+  }
+
+  .profile-picture {
+    border-radius: 1000px;
+    width: 250px;
+    height: auto;
+    margin-top: 50px;
   }
 }

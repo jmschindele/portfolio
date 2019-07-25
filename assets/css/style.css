@@ -209,7 +209,6 @@ body {
 .side-nav:hover {
   opacity: 1;
   background: whitesmoke;
-
   transform: scale(2);
   transition: .5s ease;
 }
@@ -565,5 +564,12 @@ body {
     font-size: .5em;
     padding: 5px; 
     background-color: rgba(0,0,0,0);
+  }
+
+  .side-nav:hover {
+    opacity: 1;
+    background: whitesmoke;
+    transform: scale(1);
+    transition: .5s ease;
   }
 }

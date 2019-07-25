@@ -508,4 +508,28 @@ body {
     height: auto;
     margin-top: 50px;
   }
+
+  #skills-list ul{
+    border: solid 1px whitesmoke;
+    background: whitesmoke;
+    /* max-width: 1200px; */
+    /* width: 90%; */
+    padding: 20px;
+    /* color: #626264; */
+    color: #444349;
+    margin: 20px 30px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    border-right: lightgrey;
+    border-bottom: grey;
+    border-bottom-right-radius: 10px;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    box-shadow: 
+    -2px -5px 1px 1px whitesmoke,
+    -15px -2px 1px 1px whitesmoke,
+    5px 5px 10px 2px #e2e2e2;
+    transition: .7s ease;
+   }
 }

@@ -72,3 +72,19 @@ if ($('#hi').offset().top - currentScrollTop <= 0) {
 // })
 
 
+if ($(window).width() < 700) {
+    if ( $('#github-icon').hasClass('fa-10x')) {
+        $('#github-icon').removeClass('fa-10x');
+        $('#github-icon').addClass('fa-3x');
+    }
+
+    if ( $('#linkedin-icon').hasClass('fa-10x')) {
+        $('#linkedin-icon').removeClass('fa-10x');
+        $('#linkedin-icon').addClass('fa-3x');
+    }
+
+    if ( $('#email-icon').hasClass('fa-10x')) {
+        $('#email-icon').removeClass('fa-10x');
+        $('#email-icon').addClass('fa-3x');
+    }
+}

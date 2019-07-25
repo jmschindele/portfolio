@@ -99,16 +99,16 @@ body {
   transform: scale(1.02);
 }
 
-.overlay-text {
+.overlay-text, .app-title {
   color: white;
   font-size: 20px;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  display: block;
+  display: hidden;
 }
 
 .overlay-text .app-title {
@@ -493,6 +493,8 @@ body {
     height: 100%;
     opacity: 0;
     flex-wrap: wrap;
+    position: relative;
+    display: block;
   }
 
   .project-image:hover .overlay,

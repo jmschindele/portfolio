@@ -108,7 +108,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  display: hidden;
+  /* display: hidden; */
 }
 
 .overlay-text .app-title {
@@ -493,7 +493,7 @@ body {
     height: 100%;
     opacity: 0;
     flex-wrap: wrap;
-    position: relative;
+    /* position: relative; */
     display: block;
   }
 

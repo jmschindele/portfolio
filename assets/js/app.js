@@ -80,11 +80,11 @@ if ($(window).width() < 700) {
 
     if ( $('#linkedin-icon').hasClass('fa-10x')) {
         $('#linkedin-icon').removeClass('fa-10x');
-        $('#linkedin-icon').addClass('fa-3x');
+        $('#linkedin-icon').addClass('fa-5x');
     }
 
     if ( $('#email-icon').hasClass('fa-10x')) {
         $('#email-icon').removeClass('fa-10x');
-        $('#email-icon').addClass('fa-4x');
+        $('#email-icon').addClass('fa-5x');
     }
 }

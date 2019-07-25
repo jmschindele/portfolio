@@ -435,6 +435,10 @@ body {
   .thin-block {
     margin-bottom: 15px;
   }
+  .home-container {
+    max-width: 1100px;
+    background-size: auto;
+  }
   #name {
     font-size: 15vw;
     bottom: 20%;

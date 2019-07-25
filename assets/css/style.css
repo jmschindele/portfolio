@@ -81,7 +81,7 @@ body {
    display: block;
  }
 
- #skills-list ul li {
+ #skills-list ul li:first-child {
   display: inline-block;
  }
  

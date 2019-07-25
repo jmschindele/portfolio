@@ -114,6 +114,7 @@ body {
 .overlay-text .app-title {
   font-size: 2.5em;
   font-weight: lighter;
+  display: block;
 }
 
 .project-image:hover {

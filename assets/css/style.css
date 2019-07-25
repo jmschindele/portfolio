@@ -19,10 +19,14 @@ body {
 }
 
 .profile-picture {
-  border-radius: 1px;
+  border-radius: 10px;
   max-width: 600px;
   max-height: 268px;
   height: auto;
+  margin-top: 50px;
+}
+
+.about-list {
   margin-top: 50px;
 }
 
@@ -425,9 +429,6 @@ body {
   display: inline-block;
 }
 
-#contact-form input {
-  margin-bottom: 10px;
-}
 
 @media (max-width: 700px) {
   #name {
@@ -514,6 +515,8 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+
 
   #skills-list ul {
     border: solid 1px whitesmoke;

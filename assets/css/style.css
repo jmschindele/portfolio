@@ -190,7 +190,7 @@ body {
 
 .getSticky {
   position: fixed;
-  top: 40px;
+  top: 60px;
   font-size: .2em;
   padding: 5px; 
   background-color: rgba(0,0,0,0);

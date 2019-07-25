@@ -51,6 +51,10 @@ $(window).scroll(function() {
   //     }
   //   }
 
+  if ($('.side-nav').offset().top - currentScrollTop < 40) {
+    $('.side-nav').addClass('getSticky')
+  }
+
   if ($("#portfolio-segway").offset().top - currentScrollTop <= 0) {
     if ($("#all-projects").hasClass("handleOverflow") === false) {
         $("#all-projects").addClass("handleOverflow");

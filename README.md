@@ -20,11 +20,11 @@ Utilized: HTML5, CSS4, BootStrap4, Javascript, jQuery
   
   ## Skills Section
    * This section highlights my skills, broken down into categories of 
-      ** HTML
-      ** CSS
-      ** JavaScript
-      ** Backend
-      ** Other
+      * HTML
+      * CSS
+      * JavaScript
+      * Backend
+      * Other
    * The resume rows opens a PDF of my resume in a new tab when clicked.
    * Hover events on the rows shift to a dark themed version of the current row, with some dynamic affects on the scaling and shadows.
    

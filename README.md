@@ -30,8 +30,8 @@ Utilized: HTML5, CSS4, BootStrap4, Javascript, jQuery
    
    ## Portfolio Section
    * This section shows some selected projects and gives a link to the project.
-     ** On the Desktop version, a hover over the project will cause an overlay to slide over the project, and the project to zoom in.
-     ** On the mobile version, the zoom is diasbled and the hover will cause the overlay to fade in instead of sliding.
+     * On the Desktop version, a hover over the project will cause an overlay to slide over the project, and the project to zoom in.
+     * On the mobile version, the zoom is diasbled and the hover will cause the overlay to fade in instead of sliding.
    * The blocks that show the projects have a screen shot of the project to give the user an idea of what they will see when they click the project title in the overlay.
    * The overlays show the project name and have icons for the technologies used to make the project that show at the bottom of the overlay.
       

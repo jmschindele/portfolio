@@ -6,7 +6,7 @@ Visit The Deployed Link: https://jmschindele.github.io/portfolio
 
 Utilized: HTML5, CSS4, BootStrap4, Javascript, jQuery
 
-## Getting Start
+## Getting Started
   1. Landing Page
   2. Skills Section
   3. Portfolio Section

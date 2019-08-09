@@ -40,7 +40,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: all 0.7s ease;
+  transition: all 0.7s ease-in-out;
   opacity: 1;
   display: block;
 }
@@ -57,9 +57,7 @@ body {
 #skills-list ul {
   border: solid 1px whitesmoke;
   background: whitesmoke;
-
   padding: 20px;
-
   color: #444349;
   margin: 20px 30px;
   margin-bottom: 40px;
@@ -67,10 +65,9 @@ body {
   border-right: lightgrey;
   border-bottom: grey;
   border-bottom-right-radius: 10px;
-
   box-shadow: -2px -5px 1px 1px whitesmoke, -15px -2px 1px 1px whitesmoke,
     15px 15px 15px 5px #e2e2e2;
-  transition: 0.7s ease;
+  transition: 0.7s ease-in-out;
 }
 
 #skills-list ul li:first-child {
@@ -99,7 +96,8 @@ body {
   transform: scale(1.01);
 }
 
-.overlay-text, .app-title {
+.overlay-text,
+.app-title {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -153,10 +151,8 @@ body {
   text-shadow: 0px 0px 10px black;
 }
 
-
 .thin-block {
   display: block;
-
 }
 
 #name {
@@ -184,33 +180,32 @@ body {
   z-index: 2;
   background: whitesmoke;
   padding: 20px;
-  font-size: .3em;
-  opacity: .7;
+  font-size: 0.3em;
+  opacity: 0.7;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  /* transition: .5s ease;  */
+  transition: 0.3s ease-in-out;
   transform-origin: top right;
 }
 
 .getSticky {
   position: fixed;
   top: 60px;
-  font-size: .2em;
-  padding: 5px; 
-  background-color: rgba(0,0,0,0);
-  opacity: .4
+  font-size: 0.2em;
+  padding: 5px;
+  background-color: #444349;
+  opacity: 0.4;
 }
 /* .getStick:hover {
   transform: scale(2);
-  transition: .5s ease;
+  transition: .5s ease-in-out;
 } */
-
 
 .side-nav:hover {
   opacity: 1;
   background: whitesmoke;
   transform: scale(2);
-  transition: .5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 #all-projects {
@@ -236,9 +231,9 @@ body {
   padding: 0px;
   margin: 0px;
   height: 90%;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
   text-shadow: 5px 7px 20px #919194;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .icon-link:hover,
@@ -272,7 +267,6 @@ body {
   margin-right: 6em;
 }
 
-
 /* globally hide scroll bar */
 
 ::-webkit-scrollbar {
@@ -293,7 +287,7 @@ body {
   display: block;
   margin: 20px;
   top: 10px;
-  transition: all 0.7s ease;
+  transition: all 0.7s ease-in-out;
   box-shadow: 0px 0px 10px 5px grey;
 }
 
@@ -309,14 +303,12 @@ body {
   margin: 0 auto;
   padding: 0px;
   display: block;
-  transition: .5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .square-photo:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
-
-
 
 #lastName {
   display: inline-block;
@@ -346,8 +338,6 @@ body {
   font-size: 3em;
   text-shadow: 0px 0px 10px black;
 }
-
-
 
 /* logos here */
 
@@ -465,7 +455,7 @@ body {
   }
   #last-name {
     float: left;
-    margin-left: 3%
+    margin-left: 3%;
   }
   #web-dev {
     left: 3%;
@@ -486,6 +476,7 @@ body {
     max-width: 100vw;
     min-height: 100vw;
     margin: 0 auto;
+    margin-bottom: 40px;
     border-radius: 0px;
     box-shadow: 0px 0px transparent;
   }
@@ -505,10 +496,9 @@ body {
   }
 
   .project-image:hover .overlay,
-.overlay-text {
-  opacity: 1;
-
-}
+  .overlay-text {
+    opacity: 1;
+  }
 
   .segway-banner {
     padding: 50px;
@@ -534,9 +524,9 @@ body {
     padding: 0px;
     margin: 0px;
     height: 90%;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
     text-shadow: 3px 3px 10px #919194;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
   }
 
   .profile-picture {
@@ -546,8 +536,6 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
-
 
   #skills-list ul {
     border: solid 1px whitesmoke;
@@ -564,22 +552,22 @@ body {
     border-bottom-right-radius: 10px;
     box-shadow: -2px -5px 1px 1px whitesmoke, -15px -2px 1px 1px whitesmoke,
       5px 5px 10px 2px #e2e2e2;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
   }
 
   .getSticky {
     position: fixed;
     top: 40px;
-    font-size: .5em;
-    padding: 5px; 
-    background-color: rgba(0,0,0,0);
+    font-size: 0.5em;
+    padding: 5px;
+    background-color: #444349;
   }
 
   .side-nav:hover {
     opacity: 1;
     background: whitesmoke;
     transform: scale(1);
-    transition: .5s ease;
+    transition: 0.5s ease-in-out;
   }
 
   .li-logo {
@@ -609,4 +597,45 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.code-link {
+  position: relative;
+  top: 65%;
+  left: 0;
+  display: inline-block;
+  background-color: #444349;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 5000px;
+  transition: 0.3s ease-in-out;
+}
+
+.code-link:hover {
+  background-color: whitesmoke;
+}
+
+.code-link i,
+.code-link i:focus {
+  position: relative;
+  top: 65%;
+  /* left: 50%; */
+  transform: translate(0%, -50%);
+  font-size: 2em;
+  color: white;
+  display: inline-block;
+  margin: 5em auto;
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+  height: 90%;
+  transition: 0.5s ease-in-out;
+  /* text-shadow: 2px 2px 5px 2px #919194; */
+  transition: 0.3s ease-in-out;
+}
+.code-link i:hover,
+.code-link i:active {
+  color: #444349;
+  text-shadow: 0px 0px 0px black;
 }
